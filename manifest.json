@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "video-m3u8",
+  "version": "1.0.4",
+  "description": "Right-click any page to list all .m3u8 video stream URLs detected in its network traffic.",
+  "permissions": [
+    "contextMenus",
+    "webRequest",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon16.png", "icon48.png", "icon128.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
